@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #cce3de;
+  --white: #fff;
+  --boxsize: 500px;
+  --span-color: #6b9080;
+  --title-color: #a4c3b2;
+  --black: #342e37;
+  --letter-spacing: 2px;
+  --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+body {
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5rem;
+}
+
+h1 {
+  text-align: center;
+  background: var(--title-color);
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  color: var(--black);
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+  margin-bottom: 5px;
+}
+
+.card {
+  align-items: center;
+  width: 500px;
+  padding: 5rem 0;
+  background: var(--white);
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.card span {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing);
+  color: var(--span-color);
+}
+
+.card h3 {
+  text-transform: capitalize;
+}
+.card p {
+  margin: 10px 0 30px;
+}
+.card a {
+  text-transform: capitalize;
+  transition-duration: 1s;
+  text-decoration: none;
+  color: var(--span-color);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card a:hover {
+  text-transform: capitalize;
+  transition-duration: 1s;
+  text-decoration: none;
+  background-color: var(--span-color);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 20px;
+}
